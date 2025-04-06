@@ -1,1 +1,1 @@
-export * from "./player/player.serivce"
+export * from "./player/player.service"
