@@ -1,12 +1,10 @@
 import { createProvider } from "difunkt";
-import { IFlowable } from "~/core/flows/flow.types";
-import { IdleScene } from "./idle.scene";
+import { IScene } from "~/app.types";
 
-export const GameOverScene = createProvider<IFlowable>(() => {
+export const GameOverScene = createProvider<IScene>(() => {
     return {
-        async run(switchScene) {
+        async run() {
             console.log("Game over scene running")
-            switchScene(IdleScene)
         },
     }
 })

@@ -1,12 +1,10 @@
 import { createProvider } from "difunkt";
-import { IFlowable } from "~/core/flows/flow.types";
-import { RunningScene } from "./running.scene";
+import { IScene } from "~/app.types";
 
-export const IdleScene = createProvider<IFlowable>(() => {
+export const IdleScene = createProvider<IScene>(() => {
     return {
-        async run(switchScene) {
+        async run() {
             console.log("Idle scene running");
-            switchScene(RunningScene)
         }
     }
 })
