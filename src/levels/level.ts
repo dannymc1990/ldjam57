@@ -4,9 +4,10 @@ import { AssetsService } from "~/core/assets";
 import { PixiApplication } from "~/core/pixi";
 import { Block } from "~/entities/block";
 import { Door } from "~/entities/door";
+import { Key } from "~/entities/key";
 import { Player } from "~/entities/player";
 import { Spike } from "~/entities/spike";
-import { Tourch } from "~/entities/tourch";
+import { Torch } from "~/entities/torch";
 
 interface TileLayer {
 	arrayMode: number;
@@ -66,9 +67,10 @@ export const LevelService = createProvider(({ inject }) => {
 	const level = assets.get<LevelJson>(`level${CURRENT_LEVEL}.json`)!;
 	const tileTexture = assets.get<Texture>('tiles.png');
 	const spikes: Spike[] = [];
-	const torches: Tourch[] = [];
+	const torches: Torch[] = [];
 	const doors: Door[] = [];
 	const blocks: Block[] = [];
+	const keys: Key[] = [];
 	let player: Player;
 
 	// debug-tool using https://github.com/bfanger/pixi-inspector
@@ -158,11 +160,19 @@ export const LevelService = createProvider(({ inject }) => {
 					}
 					if (name === 'torch') {
 						const frames = getFrames('torch');
-						const torch = new Tourch(x, y, w, h, frames);
+						const torch = new Torch(x, y, w, h, frames);
 						torch.name = name + i;
 						torches.push(torch);
 
 						entitiesContainer.addChild(torch);
+					}
+					if (name === 'key') {
+						const frames = getFrames('key');
+						const key = new Torch(x, y, w, h, frames);
+						key.name = name + i;
+						keys.push(key);
+
+						entitiesContainer.addChild(key);
 					}
 					if (name === 'spike') {
 						const frames = getFrames('spike');
