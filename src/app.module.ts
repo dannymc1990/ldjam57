@@ -20,6 +20,6 @@ export const AppModule = createModule({
     providers: [
         provideLogger("idjam57"),
         provideAssetServices(),
-        PlayerService
+        PlayerService,
     ]
 })

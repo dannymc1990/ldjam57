@@ -6,11 +6,6 @@ export const PlayerService = createProvider(({ inject }) => {
 
 
     return {
-        test() {
-            const ticker = app.ticker.add(() => {
-                console.log("Player is moving")
-            })
         
-        }
     }
 })
