@@ -5,6 +5,114 @@
       "assets": [
         {
           "alias": [
+            "default/ogmo/game.ogmo",
+            "game.ogmo"
+          ],
+          "src": [
+            "default/ogmo/game.ogmo"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/door.png",
+            "door.png"
+          ],
+          "src": [
+            "default/ogmo/icons/door.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/key.png",
+            "key.png"
+          ],
+          "src": [
+            "default/ogmo/icons/key.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/player.png",
+            "player.png"
+          ],
+          "src": [
+            "default/ogmo/icons/player.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/spike.png",
+            "spike.png"
+          ],
+          "src": [
+            "default/ogmo/icons/spike.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/torch.png",
+            "torch.png"
+          ],
+          "src": [
+            "default/ogmo/icons/torch.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/level1.json",
+            "level1.json"
+          ],
+          "src": [
+            "default/ogmo/level1.json"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/level2.json",
+            "level2.json"
+          ],
+          "src": [
+            "default/ogmo/level2.json"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/tiles.png",
+            "tiles.png"
+          ],
+          "src": [
+            "default/ogmo/tiles.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
             "default/sprites/env",
             "env"
           ],

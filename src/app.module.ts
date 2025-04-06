@@ -9,6 +9,7 @@ import { IdleScene } from "./game/scenes/idle.scene";
 import { GameOverScene } from "./game/scenes/game-over.scene";
 import { RunningScene } from "./game/scenes/running.scene";
 import { SceneModule } from "./core/scene/scene.module";
+import { LevelService } from "./levels/level";
 
 export const AppModule = createModule({
     runnables: [AppEntry],
@@ -36,6 +37,6 @@ export const AppModule = createModule({
         // Services
         PlayerService,
 		ResizerService,
-   
+		LevelService
     ]
 })

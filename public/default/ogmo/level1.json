@@ -1,0 +1,83 @@
+{
+  "ogmoVersion": "3.4.0",
+  "width": 320,
+  "height": 180,
+  "offsetX": 0,
+  "offsetY": 0,
+  "layers": [
+    {
+      "name": "tiles",
+      "_eid": "95040922",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 16,
+      "gridCellHeight": 16,
+      "gridCellsX": 20,
+      "gridCellsY": 13,
+      "tileset": "New Tileset",
+      "data": [78, 78, 78, 78, 0, 1, 2, 3, 4, 5, 78, 78, 78, 78, 78, 78, 78, 78, 78, 78, 78, 78, 78, 78, 10, 11, 12, 13, 17, 3, 3, 3, 5, 78, 0, 2, 66, 67, 4, 5, 78, 0, 2, 2, 2, 21, 22, 18, 17, 17, 72, 7, 15, 78, 10, 7, 7, 7, 27, 5, 78, 10, 7, 7, 17, 18, 16, 16, 18, 16, 16, 7, 15, 78, 10, 7, 9, 7, 27, 15, 78, 10, 7, 16, 17, 50, 42, 43, 44, 45, 7, 16, 2, 2, 2, 7, 7, 18, 73, 25, 78, 10, 7, 16, 7, 15, 7, 17, 7, 17, 28, 28, 17, 28, 28, 28, 17, 18, 28, 25, 0, 1, 22, 22, 17, 2, 17, 17, 17, 7, 7, 27, 27, 27, 27, 18, 7, 18, 7, 15, 10, 11, 16, 18, 16, 17, 17, 17, 17, 17, 2, 3, 4, 54, 51, 51, 51, 51, 51, 45, 20, 21, 18, 23, 16, 17, 7, 7, 17, 16, 18, 23, 24, 25, 78, 78, 78, 78, 78, 78, 30, 31, 32, 33, 34, 50, 51, 51, 53, 31, 32, 33, 34, 35, 78, 78, 78, 78, 78, 78, 40, 41, 42, 43, 44, 45, 78, 78, 40, 41, 42, 43, 44, 45, 78, 78, 78, 78, 78, 78, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "exportMode": 0,
+      "arrayMode": 0
+    },
+    {
+      "name": "collision",
+      "_eid": "95071797",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 16,
+      "gridCellHeight": 16,
+      "gridCellsX": 20,
+      "gridCellsY": 13,
+      "entities": [
+        {"name": "block", "id": 1, "_eid": "95063802", "x": 0, "y": 96, "width": 16, "height": 80, "originX": 0, "originY": 0},
+        {"name": "block", "id": 2, "_eid": "95063802", "x": 16, "y": 32, "width": 16, "height": 80, "originX": 0, "originY": 0},
+        {"name": "block", "id": 3, "_eid": "95063802", "x": 32, "y": 32, "width": 48, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 4, "_eid": "95063802", "x": 64, "y": 0, "width": 16, "height": 32, "originX": 0, "originY": 0},
+        {"name": "block", "id": 5, "_eid": "95063802", "x": 80, "y": 0, "width": 80, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 6, "_eid": "95063802", "x": 144, "y": 16, "width": 64, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 7, "_eid": "95063802", "x": 192, "y": 32, "width": 16, "height": 48, "originX": 0, "originY": 0},
+        {"name": "block", "id": 8, "_eid": "95063802", "x": 208, "y": 64, "width": 32, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 9, "_eid": "95063802", "x": 224, "y": 16, "width": 16, "height": 48, "originX": 0, "originY": 0},
+        {"name": "block", "id": 10, "_eid": "95063802", "x": 240, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 11, "_eid": "95063802", "x": 288, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 12, "_eid": "95063802", "x": 304, "y": 16, "width": 16, "height": 96, "originX": 0, "originY": 0},
+        {"name": "block", "id": 13, "_eid": "95063802", "x": 160, "y": 112, "width": 160, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 14, "_eid": "95063802", "x": 208, "y": 128, "width": 16, "height": 48, "originX": 0, "originY": 0},
+        {"name": "block", "id": 15, "_eid": "95063802", "x": 128, "y": 160, "width": 80, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 16, "_eid": "95063802", "x": 16, "y": 160, "width": 80, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 17, "_eid": "95063802", "x": 80, "y": 144, "width": 64, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 18, "_eid": "95063802", "x": 80, "y": 64, "width": 80, "height": 16, "originX": 0, "originY": 0},
+        {"name": "block", "id": 19, "_eid": "95063802", "x": 80, "y": 80, "width": 16, "height": 32, "originX": 0, "originY": 0}
+      ]
+    },
+    {
+      "name": "entities",
+      "_eid": "95073223",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 16,
+      "gridCellHeight": 16,
+      "gridCellsX": 20,
+      "gridCellsY": 13,
+      "entities": [
+        {"name": "player", "id": 0, "_eid": "95067914", "x": 32, "y": 128, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 1, "_eid": "95068402", "x": 176, "y": 128, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 2, "_eid": "95068402", "x": 176, "y": 144, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 3, "_eid": "95068402", "x": 208, "y": 80, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 4, "_eid": "95068402", "x": 288, "y": 48, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 5, "_eid": "95068402", "x": 240, "y": 48, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 7, "_eid": "95068402", "x": 272, "y": 96, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 8, "_eid": "95068402", "x": 144, "y": 96, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 9, "_eid": "95068402", "x": 64, "y": 96, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 10, "_eid": "95068402", "x": 128, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 11, "_eid": "95068402", "x": 80, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "door", "id": 12, "_eid": "96858146", "x": 256, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "door", "id": 13, "_eid": "96858146", "x": 272, "y": 16, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "torch", "id": 14, "_eid": "96868256", "x": 112, "y": 16, "originX": 0, "originY": 0},
+        {"name": "torch", "id": 16, "_eid": "96868256", "x": 96, "y": 80, "originX": 0, "originY": 0},
+        {"name": "torch", "id": 17, "_eid": "96868256", "x": 288, "y": 32, "originX": 0, "originY": 0},
+        {"name": "key", "id": 18, "_eid": "97869666", "x": 176, "y": 32, "width": 16, "height": 16, "originX": 0, "originY": 0}
+      ]
+    }
+  ]
+}
