@@ -8,7 +8,7 @@ import { ResizerService } from "./core/resizer/resizer.service";
 import { IdleScene } from "./game/scenes/idle.scene";
 import { GameOverScene } from "./game/scenes/game-over.scene";
 import { RunningScene } from "./game/scenes/running.scene";
-import { SceneManagerService } from "./game/scenes/scene-manager.service";
+import { SceneModule } from "./core/scene/scene.module";
 
 export const AppModule = createModule({
     runnables: [AppEntry],
@@ -21,6 +21,14 @@ export const AppModule = createModule({
                 antialias: true
             }
         }),
+        SceneModule({
+            defaultScene: IdleScene,
+            scenes: new Map([
+                [IdleScene, [{ next: RunningScene, condition: () => false }]],
+                [RunningScene, [{ next: GameOverScene, condition: () => true }]],
+                [GameOverScene, [{ next: IdleScene, condition: () => true }]],
+            ])
+        })
     ],
     providers: [
         provideLogger("idjam57"),
@@ -28,10 +36,6 @@ export const AppModule = createModule({
         // Services
         PlayerService,
 		ResizerService,
-        // Scenes
-        SceneManagerService,
-        IdleScene,
-        GameOverScene,
-        RunningScene
+   
     ]
 })
