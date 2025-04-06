@@ -3,11 +3,13 @@ import { texturePacker } from "@assetpack/core/texture-packer"
 
 export default {
     entry: './raw-assets',
-    output: './public/assets',
+    output: './public',
     pipes: [
         texturePacker({}),
         pixiManifest({
-            output: 'manifest.json'
+            output: 'manifest.json',
+            createShortcuts: true
+            
         })
     ]
 }

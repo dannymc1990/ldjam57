@@ -1,9 +1,10 @@
 import { createModule } from "difunkt";
-import { AppRunnable } from "./app.entry";
+import { AppEntry } from "./app.entry";
 import { PixiModule } from "./core/pixi/pixi.module";
+import { provideAssetServices } from "./core/assets";
 
 export const AppModule = createModule({
-    runnables: [AppRunnable],
+    runnables: [AppEntry],
     imports: [
         PixiModule({
             mountTo: document.getElementById("app")!,
@@ -13,5 +14,8 @@ export const AppModule = createModule({
                 antialias: true
             }
         })
+    ],
+    providers: [
+        provideAssetServices()
     ]
 })

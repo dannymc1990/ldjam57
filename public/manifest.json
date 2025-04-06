@@ -1,0 +1,39 @@
+{
+  "bundles": [
+    {
+      "name": "default",
+      "assets": [
+        {
+          "alias": [
+            "default/sprites/env",
+            "env"
+          ],
+          "src": [
+            "default/sprites/env@0.5x.json",
+            "default/sprites/env.json"
+          ],
+          "data": {
+            "tags": {
+              "tps": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "default/sprites/player",
+            "player"
+          ],
+          "src": [
+            "default/sprites/player.json"
+          ],
+          "data": {
+            "tags": {
+              "tps": true,
+              "nomip": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

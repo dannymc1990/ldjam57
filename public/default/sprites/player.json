@@ -1,0 +1,336 @@
+{
+  "frames": {
+    "player_walk_up_03.png": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_up_02.png": {
+      "frame": {
+        "x": 17,
+        "y": 2,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_up_01.png": {
+      "frame": {
+        "x": 2,
+        "y": 21,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_right_03.png": {
+      "frame": {
+        "x": 20,
+        "y": 21,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_right_02.png": {
+      "frame": {
+        "x": 32,
+        "y": 2,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_right_01.png": {
+      "frame": {
+        "x": 2,
+        "y": 36,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_leftt_02.png": {
+      "frame": {
+        "x": 20,
+        "y": 36,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_left_03.png": {
+      "frame": {
+        "x": 38,
+        "y": 21,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_left_01.png": {
+      "frame": {
+        "x": 39,
+        "y": 36,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_down_03.png": {
+      "frame": {
+        "x": 47,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_down_02.png": {
+      "frame": {
+        "x": 2,
+        "y": 51,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_walk_down_01.png": {
+      "frame": {
+        "x": 21,
+        "y": 51,
+        "w": 13,
+        "h": 16
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 2,
+        "w": 13,
+        "h": 16
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_idle_up.png": {
+      "frame": {
+        "x": 39,
+        "y": 51,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_idle_right.png": {
+      "frame": {
+        "x": 58,
+        "y": 20,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_idle_left.png": {
+      "frame": {
+        "x": 58,
+        "y": 35,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    },
+    "player_idle_down.png": {
+      "frame": {
+        "x": 58,
+        "y": 50,
+        "w": 13,
+        "h": 17
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 13,
+        "h": 17
+      },
+      "sourceSize": {
+        "w": 16,
+        "h": 20
+      }
+    }
+  },
+  "meta": {
+    "app": "http://github.com/pixijs/assetpack",
+    "version": "1.0",
+    "image": "player.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 77,
+      "h": 66
+    },
+    "scale": 1,
+    "related_multi_packs": []
+  }
+}
