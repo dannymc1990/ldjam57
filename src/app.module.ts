@@ -3,6 +3,7 @@ import { AppEntry } from "./app.entry";
 import { PixiModule } from "./core/pixi/pixi.module";
 import { provideAssetServices } from "./core/assets";
 import { provideLogger } from "./core/logger";
+import { PlayerService } from "./game";
 
 export const AppModule = createModule({
     runnables: [AppEntry],
@@ -18,6 +19,7 @@ export const AppModule = createModule({
     ],
     providers: [
         provideLogger("idjam57"),
-        provideAssetServices()
+        provideAssetServices(),
+        PlayerService
     ]
 })
