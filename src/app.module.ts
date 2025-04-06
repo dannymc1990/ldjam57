@@ -2,6 +2,7 @@ import { createModule } from "difunkt";
 import { AppEntry } from "./app.entry";
 import { PixiModule } from "./core/pixi/pixi.module";
 import { provideAssetServices } from "./core/assets";
+import { provideLogger } from "./core/logger";
 
 export const AppModule = createModule({
     runnables: [AppEntry],
@@ -16,6 +17,7 @@ export const AppModule = createModule({
         })
     ],
     providers: [
+        provideLogger("idjam57"),
         provideAssetServices()
     ]
 })

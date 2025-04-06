@@ -1,8 +1,11 @@
 import { createProvider } from "difunkt";
-import { Assets } from "pixi.js";
+import { Assets, Sprite, Spritesheet } from "pixi.js";
+import { LoggerService } from "../logger/logger.service";
 
-export const AssetsService = createProvider(() => {
-    
+export const AssetsService = createProvider(({ inject }) => {
+    const logger = inject(LoggerService);
+    let currenBundle: Record<string, Spritesheet> | null = null;
+
     return {
         async loadManifest(url: string) {
             try {
@@ -11,14 +14,28 @@ export const AssetsService = createProvider(() => {
 
                 await Assets.init({ manifest });
                 
-                console.log("Succesfully loaded", url)
+                logger.info("Succesfully loaded", url)
 
             } catch (e: any) {
-                console.log(`Could not load manifest ${url}`, e)
+                logger.info(`Could not load manifest ${url}`, e)
             }
         },
-        async getBundle(name = "default") {
-            return await Assets.loadBundle(name)
+        async switchBundle(name: string) {
+            currenBundle = await Assets.loadBundle(name);
+            logger.info("Using bundle", name)
+        },
+        from(spriteSheet: string) {
+
+            if (!currenBundle) {
+                throw new Error(`No active bundle. Use switchBundle(<bundle_name>)`)
+            }
+
+            return {
+                getSprite(spriteName: string) {
+                    return new Sprite(currenBundle?.[spriteSheet].textures[spriteName])
+                }
+            }
         }
+
     }
 })
