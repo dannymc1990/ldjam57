@@ -3,7 +3,8 @@ TODO list:
 [] keyboard input movement
 [] collision with walls
 [] hit-test with keys, doors & torch
-[] sounds
+[x] sounds
+	[] add sounds on hit-test accordingly
 [] count-down timer - 10 sec timer
-[] player spot-light behaviour
+[x] player spot-light behaviour
 [] level switching mechanism

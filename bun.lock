@@ -7,6 +7,7 @@
         "@assetpack/core": "^1.4.0",
         "@pixi/sound": "^6.0.1",
         "difunkt": "^0.1.11",
+        "gsap": "^3.12.7",
         "pixi.js": "^8.9.1",
       },
       "devDependencies": {
@@ -534,6 +535,8 @@
     "gpu-tex-enc": ["gpu-tex-enc@1.2.5", "", { "dependencies": { "@gpu-tex-enc/astc": "^4.7.1", "@gpu-tex-enc/basis": "^1.16.4", "@gpu-tex-enc/bc": "^1.0.11", "@gpu-tex-enc/etc": "^1.0.3", "yargs": "^17.7.2" }, "optionalDependencies": { "sharp": "^0.33.0" }, "bin": { "gputexenc": "src/cli.js" } }, "sha512-4kCvhEYMN2OrDiAYDau54rlKrLv/fLUBsp5nUXKi7GoF2Muumy0QJ9j3URXfiM313WGId78+lJeprTFEhWPcVA=="],
 
     "graceful-fs": ["graceful-fs@4.2.11", "", {}, "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="],
+
+    "gsap": ["gsap@3.12.7", "", {}, "sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg=="],
 
     "handlebars": ["handlebars@4.7.8", "", { "dependencies": { "minimist": "^1.2.5", "neo-async": "^2.6.2", "source-map": "^0.6.1", "wordwrap": "^1.0.0" }, "optionalDependencies": { "uglify-js": "^3.1.4" }, "bin": { "handlebars": "bin/handlebars" } }, "sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ=="],
 

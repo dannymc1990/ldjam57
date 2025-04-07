@@ -19,6 +19,7 @@
     "@assetpack/core": "^1.4.0",
     "@pixi/sound": "^6.0.1",
     "difunkt": "^0.1.11",
+    "gsap": "^3.12.7",
     "pixi.js": "^8.9.1"
   }
 }

@@ -8,9 +8,10 @@ import { Key } from "~/entities/key";
 import { Player } from "~/entities/player";
 import { Spike } from "~/entities/spike";
 import { Torch } from "~/entities/torch";
-import { TileLayer, LevelLayers, EntityLayer, LevelJson } from "./level.types";
+import { TileLayer, EntityLayer, LevelJson } from "./level.types";
 import { IEntity } from "~/entities/entities.types";
 import { KeyboardService } from "~/core/keyboard/keyboard.service";
+import { SpotLight } from "~/entities/spotLight";
 
 const ENTITY_CONTAINER = "entityContainer"
 const TILE_CONTAINER = "tileContainer"
@@ -30,6 +31,7 @@ export const LevelService = createProvider(({ inject }) => {
 	levelContainer.label = LEVEL_CONTAINER;
 	
 	let player: Player;
+	let spotLight: SpotLight;
 
 	app.stage.addChild(levelContainer);
 
@@ -159,6 +161,15 @@ export const LevelService = createProvider(({ inject }) => {
 				}
 			});
 		});
+
+		// bring player to front
+		player.zIndex = 1;
+	}
+
+	function renderSpotLight() {
+		spotLight = new SpotLight(app.renderer, player);
+		levelContainer.addChild(spotLight);
+		levelContainer.mask = spotLight;
 	}
 
 	function getEntitiesContainer() {
@@ -172,6 +183,8 @@ export const LevelService = createProvider(({ inject }) => {
 				if (!onUpdate) continue;
 				onUpdate(entitiesContainer.children);
 			}
+
+			spotLight?.onUpdate();
 		}
 	}
 
@@ -185,6 +198,7 @@ export const LevelService = createProvider(({ inject }) => {
 
 			renderTiles(tileLayer);
 			renderEntities(entitiesLayer);
+			renderSpotLight();
 
 			ticker.start();
 		},
