@@ -1,12 +1,12 @@
 import { createModule, provide } from "difunkt";
-import { PixiRunnable } from "./pixi.runnable";
+import { PixiDevToolsRunnable, PixiRunnable } from "./pixi.runnable";
 import { IPixiModuleOptions } from "./pixi.types";
 import { PixiApplication, PixiModuleOptions } from "./pixi.providers";
 import { Application } from "pixi.js";
 
 export const PixiModule = (options: IPixiModuleOptions
 ) => createModule({
-    runnables: [PixiRunnable],
+    runnables: [PixiRunnable, PixiDevToolsRunnable],
     providers: [
         provide(PixiModuleOptions, {
             value: options

@@ -47,7 +47,7 @@ export const AssetsService = createProvider(({ inject }) => {
 						}
 					}
 
-					return frames;
+					return frames as Texture[];
 				}
             }
         }

@@ -3,13 +3,13 @@ import { AppEntry } from "./app.entry";
 import { PixiModule } from "./core/pixi/pixi.module";
 import { provideAssetServices } from "./core/assets";
 import { provideLogger } from "./core/logger";
-import { PlayerService } from "./game";
 import { ResizerService } from "./core/resizer/resizer.service";
-import { IdleScene } from "./game/scenes/idle.scene";
-import { GameOverScene } from "./game/scenes/game-over.scene";
-import { RunningScene } from "./game/scenes/running.scene";
 import { SceneModule } from "./core/scene/scene.module";
 import { LevelService } from "./levels/level";
+import { GameOverScene } from "./scenes/game-over.scene";
+import { IdleScene } from "./scenes/idle.scene";
+import { RunningScene } from "./scenes/running.scene";
+import { KeyboardService } from "./core/keyboard/keyboard.service";
 
 export const AppModule = createModule({
     runnables: [AppEntry],
@@ -35,7 +35,7 @@ export const AppModule = createModule({
         provideLogger("idjam57"),
         provideAssetServices(),
         // Services
-        PlayerService,
+        KeyboardService,
 		ResizerService,
 		LevelService
     ]

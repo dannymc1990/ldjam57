@@ -28,8 +28,8 @@ export const ResizerService = createProvider(({ inject }) => {
 			appliedWidth = appliedHeight * canvasRatio;
 		}
 
-		app.view.style.width = appliedWidth + 'px';
-		app.view.style.height = appliedHeight + 'px';
+		app.canvas.style.width = appliedWidth + 'px';
+		app.canvas.style.height = appliedHeight + 'px';
 	}
 
 	return {

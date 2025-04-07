@@ -1,7 +1,8 @@
 import { IGameState } from "./state.types";
 
 const GameState: IGameState = {
-    state: "idle"
+    state: "idle",
+    currentLevel: 1
 }
 
 export function setGameState<T extends keyof IGameState>(key: T, value: IGameState[T]) {
