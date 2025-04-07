@@ -64,7 +64,7 @@
         {"name": "player", "id": 0, "_eid": "95067914", "x": 272, "y": 32, "width": 16, "height": 16, "originX": 0, "originY": 0},
         {"name": "spike", "id": 1, "_eid": "95068402", "x": 192, "y": 128, "width": 16, "height": 16, "originX": 0, "originY": 0},
         {"name": "spike", "id": 2, "_eid": "95068402", "x": 112, "y": 128, "width": 16, "height": 16, "originX": 0, "originY": 0},
-        {"name": "spike", "id": 3, "_eid": "95068402", "x": 208, "y": 80, "width": 16, "height": 16, "originX": 0, "originY": 0},
+        {"name": "spike", "id": 3, "_eid": "95068402", "x": 240, "y": 64, "width": 16, "height": 16, "originX": 0, "originY": 0},
         {"name": "spike", "id": 6, "_eid": "95068402", "x": 288, "y": 144, "width": 16, "height": 16, "originX": 0, "originY": 0},
         {"name": "spike", "id": 7, "_eid": "95068402", "x": 240, "y": 144, "width": 16, "height": 16, "originX": 0, "originY": 0},
         {"name": "spike", "id": 8, "_eid": "95068402", "x": 128, "y": 80, "width": 16, "height": 16, "originX": 0, "originY": 0},
