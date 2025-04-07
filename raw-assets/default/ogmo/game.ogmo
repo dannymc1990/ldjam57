@@ -41,6 +41,14 @@
       "exportID": "95073223",
       "requiredTags": [],
       "excludedTags": []
+    },
+    {
+      "definition": "entity",
+      "name": "timer",
+      "gridSize": {"x": 16, "y": 16},
+      "exportID": "04497566",
+      "requiredTags": [],
+      "excludedTags": []
     }
   ],
   "entities": [
@@ -269,6 +277,44 @@
       "values": [],
       "texture": "icons/key.png",
       "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA50lEQVQ4jWNgGAWMhBSoCksx6FrZMFw+duQ/AwMDg7KWDuPda1cYbr99hl0xOrY3smZQFZb6///jmf8HJrv8VxWW+u9h6wbXw4Jmxn90Q589vM8wu0GLQU3Jj4GBgYFhdoMWQ2rDlf8w16MbwDC7QQurV4xs7BnPHTmIYQGGAfZxHRDGk7kManYbGRgYGBhu3dvEsOT8AqwGM2EThDlX18qGEWYYn4goxAInVQIGPJnL4BIexQizXdfKhlHNbiNDb/yL/7cO+TOo2W1EGIzuBaji/7pWNgwMDAyMl48dQRGHsWHiowACAMbQR9v0qyomAAAAAElFTkSuQmCC"
+    },
+    {
+      "exportID": "04499024",
+      "name": "countdown_timer",
+      "limit": -1,
+      "size": {"x": 16, "y": 16},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 16, "y": 16},
+      "resizeableX": true,
+      "resizeableY": true,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": [],
+      "texture": "icons/countdown_timer.png",
+      "textureImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAANUlEQVQ4jWNgGAWMuCTWGBn9R+aHnDuHUy1WzcgGoPNJ0kwIMBHtrOFrAFZASizQJh0MLQAAv/AcoSL99fYAAAAASUVORK5CYII="
     }
   ],
   "tilesets": [

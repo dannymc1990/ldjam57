@@ -17,6 +17,18 @@
         },
         {
           "alias": [
+            "default/ogmo/icons/countdown_timer.png",
+            "countdown_timer.png"
+          ],
+          "src": [
+            "default/ogmo/icons/countdown_timer.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
             "default/ogmo/icons/door.png",
             "door.png"
           ],
@@ -58,6 +70,18 @@
           ],
           "src": [
             "default/ogmo/icons/spike.png"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/ogmo/icons/text.png",
+            "text.png"
+          ],
+          "src": [
+            "default/ogmo/icons/text.png"
           ],
           "data": {
             "tags": {}

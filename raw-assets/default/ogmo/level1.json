@@ -78,6 +78,19 @@
         {"name": "torch", "id": 17, "_eid": "96868256", "x": 288, "y": 32, "originX": 0, "originY": 0},
         {"name": "key", "id": 18, "_eid": "97869666", "x": 176, "y": 32, "width": 16, "height": 16, "originX": 0, "originY": 0}
       ]
+    },
+    {
+      "name": "timer",
+      "_eid": "04497566",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 16,
+      "gridCellHeight": 16,
+      "gridCellsX": 20,
+      "gridCellsY": 13,
+      "entities": [
+        {"name": "countdown_timer", "id": 0, "_eid": "04499024", "x": 128, "y": 0, "width": 16, "height": 16, "originX": 0, "originY": 0}
+      ]
     }
   ]
 }

@@ -12,10 +12,12 @@ import { TileLayer, EntityLayer, LevelJson } from "./level.types";
 import { IEntity } from "~/entities/entities.types";
 import { KeyboardService } from "~/core/keyboard/keyboard.service";
 import { SpotLight } from "~/entities/spotLight";
+import { CountDownTimer } from "~/entities/countDownTimer";
 
 const ENTITY_CONTAINER = "entityContainer"
 const TILE_CONTAINER = "tileContainer"
 const LEVEL_CONTAINER = "levelContainer"
+const UI_CONTAINER = "uiContainer"
 
 export const LevelService = createProvider(({ inject }) => {
 	const app = inject(PixiApplication);
@@ -29,11 +31,16 @@ export const LevelService = createProvider(({ inject }) => {
 	const keys: Key[] = [];
 	const levelContainer = new Container();
 	levelContainer.label = LEVEL_CONTAINER;
+
+	const uiContainer = new Container();
+	uiContainer.label = UI_CONTAINER;
 	
 	let player: Player;
 	let spotLight: SpotLight;
+	let countDownTimer: CountDownTimer;
 
 	app.stage.addChild(levelContainer);
+	app.stage.addChild(uiContainer);
 
 	const ticker = app.ticker.add(onUpdate)
 
@@ -159,11 +166,23 @@ export const LevelService = createProvider(({ inject }) => {
 						entitiesContainer.addChild(block);
 					}
 				}
+				if (layerName === 'timer') {
+					if (name === 'countdown_timer') {
+						countDownTimer = new CountDownTimer(x, y);
+						countDownTimer.label = name + i;
+						countDownTimer.onComplete = () => {
+							// game-over
+						};
+
+						uiContainer.addChild(countDownTimer);
+					}
+				}
 			});
 		});
 
 		// bring player to front
 		player.zIndex = 1;
+		countDownTimer.zIndex = 2;
 	}
 
 	function renderSpotLight() {
@@ -204,6 +223,8 @@ export const LevelService = createProvider(({ inject }) => {
 		},
 		destroy() {
 			ticker.stop();
+			levelContainer.destroy();
+			uiContainer.destroy();
 			// TODO: Remove level for reset
 		}
 	}
