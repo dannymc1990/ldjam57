@@ -19,7 +19,8 @@ export const AppModule = createModule({
             application: {
                 width: 320,
                 height: 180,
-                antialias: true
+				// set to false for pixel-art games to have crisp-edges
+                antialias: false,
             }
         }),
         SceneModule({

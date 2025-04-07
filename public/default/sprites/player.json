@@ -11,13 +11,13 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_up_02.png": {
@@ -25,25 +25,25 @@
         "x": 17,
         "y": 2,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_up_01.png": {
       "frame": {
         "x": 2,
-        "y": 21,
+        "y": 20,
         "w": 13,
         "h": 16
       },
@@ -51,19 +51,19 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_right_03.png": {
       "frame": {
         "x": 20,
-        "y": 21,
+        "y": 20,
         "w": 13,
         "h": 16
       },
@@ -71,13 +71,13 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 2,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_right_02.png": {
@@ -85,25 +85,25 @@
         "x": 32,
         "y": 2,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 2,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_right_01.png": {
       "frame": {
         "x": 2,
-        "y": 36,
+        "y": 35,
         "w": 13,
         "h": 16
       },
@@ -111,19 +111,19 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 2,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_left_03.png": {
       "frame": {
         "x": 20,
-        "y": 36,
+        "y": 35,
         "w": 13,
         "h": 16
       },
@@ -131,13 +131,13 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_left_01.png": {
@@ -151,39 +151,39 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_leftt_02.png": {
       "frame": {
-        "x": 47,
+        "x": 38,
         "y": 20,
         "w": 13,
-        "h": 17
+        "h": 16
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_down_03.png": {
       "frame": {
-        "x": 2,
-        "y": 51,
+        "x": 38,
+        "y": 35,
         "w": 13,
         "h": 16
       },
@@ -191,39 +191,39 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_down_02.png": {
       "frame": {
-        "x": 20,
-        "y": 51,
+        "x": 2,
+        "y": 50,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": true,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_walk_down_01.png": {
       "frame": {
-        "x": 39,
-        "y": 39,
+        "x": 20,
+        "y": 50,
         "w": 13,
         "h": 16
       },
@@ -231,93 +231,93 @@
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 2,
+        "y": 0,
         "w": 13,
         "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_idle_up.png": {
       "frame": {
-        "x": 62,
-        "y": 2,
+        "x": 38,
+        "y": 50,
         "w": 13,
-        "h": 17
+        "h": 16
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_idle_right.png": {
       "frame": {
         "x": 62,
-        "y": 21,
+        "y": 2,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 2,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_idle_left.png": {
       "frame": {
-        "x": 57,
-        "y": 40,
+        "x": 56,
+        "y": 20,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": true,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     },
     "player_idle_down.png": {
       "frame": {
-        "x": 2,
-        "y": 66,
+        "x": 56,
+        "y": 35,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "rotated": true,
       "trimmed": true,
       "spriteSourceSize": {
         "x": 1,
-        "y": 1,
+        "y": 0,
         "w": 13,
-        "h": 17
+        "h": 16
       },
       "sourceSize": {
         "w": 16,
-        "h": 20
+        "h": 16
       }
     }
   },
@@ -328,7 +328,7 @@
     "format": "RGBA8888",
     "size": {
       "w": 77,
-      "h": 81
+      "h": 65
     },
     "scale": 1,
     "related_multi_packs": []

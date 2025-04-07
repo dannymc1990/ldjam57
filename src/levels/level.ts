@@ -13,6 +13,8 @@ import { IEntity } from "~/entities/entities.types";
 import { KeyboardService } from "~/core/keyboard/keyboard.service";
 
 const ENTITY_CONTAINER = "entityContainer"
+const TILE_CONTAINER = "tileContainer"
+const LEVEL_CONTAINER = "levelContainer"
 
 export const LevelService = createProvider(({ inject }) => {
 	const app = inject(PixiApplication);
@@ -24,11 +26,12 @@ export const LevelService = createProvider(({ inject }) => {
 	const doors: Door[] = [];
 	const blocks: Block[] = [];
 	const keys: Key[] = [];
-	const gameContainer = new Container();
+	const levelContainer = new Container();
+	levelContainer.label = LEVEL_CONTAINER;
 	
 	let player: Player;
 
-	app.stage.addChild(gameContainer);
+	app.stage.addChild(levelContainer);
 
 	const ticker = app.ticker.add(onUpdate)
 
@@ -36,9 +39,10 @@ export const LevelService = createProvider(({ inject }) => {
 		const tileData = tile.data;
 		const tilesetColumns = 10;
 		const tilesContainer = new Container();
+		tilesContainer.label = TILE_CONTAINER;
 		tilesContainer.cacheAsTexture(true);
 
-		gameContainer.addChild(tilesContainer);
+		levelContainer.addChild(tilesContainer);
 
 		tileData.forEach((id, i) => {
 			if (id > -1) {
@@ -72,14 +76,13 @@ export const LevelService = createProvider(({ inject }) => {
 		return assets.from('env').getFrames(frame)!;
 	};
 
-	function renderEntities(layers: LevelLayers) {
+	function renderEntities(layers: EntityLayer[]) {
 		const entitiesContainer = new Container();
 
 		entitiesContainer.label = ENTITY_CONTAINER;
-		gameContainer.addChild(entitiesContainer);
+		levelContainer.addChild(entitiesContainer);
 
-		layers.forEach(_layer => {
-			const layer = _layer as EntityLayer;
+		layers.forEach(layer => {
 			const layerName = layer.name;
 
 			const entities = layer.entities;
@@ -97,6 +100,8 @@ export const LevelService = createProvider(({ inject }) => {
 						player.label = name;
 						player.add('idleUp', getPlayerFrames('idle_up')),
 						player.add('idleDown', getPlayerFrames('idle_down')),
+						player.add('idleLeft', getPlayerFrames('idle_left')),
+						player.add('idleRight', getPlayerFrames('idle_right')),
 						player.add('walkLeft', getPlayerFrames('walk_left')),
 						player.add('walkRight', getPlayerFrames('walk_right')),
 						player.add('walkUp', getPlayerFrames('walk_up')),
@@ -157,7 +162,7 @@ export const LevelService = createProvider(({ inject }) => {
 	}
 
 	function getEntitiesContainer() {
-		return gameContainer.getChildByName(ENTITY_CONTAINER) as Container<ContainerChild & IEntity>;
+		return levelContainer.getChildByName(ENTITY_CONTAINER) as Container<ContainerChild & IEntity>;
 	}
 
 	function onUpdate() {

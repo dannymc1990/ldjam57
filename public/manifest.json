@@ -117,12 +117,12 @@
             "env"
           ],
           "src": [
-            "default/sprites/env@0.5x.json",
             "default/sprites/env.json"
           ],
           "data": {
             "tags": {
-              "tps": true
+              "tps": true,
+              "nomip": true
             }
           }
         },
