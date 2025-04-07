@@ -5,6 +5,6 @@ TODO list:
 [] hit-test with keys, doors & torch
 [x] sounds
 	[] add sounds on hit-test accordingly
-[] count-down timer - 10 sec timer
+[x] count-down timer - 10 sec timer
 [x] player spot-light behaviour
 [] level switching mechanism
