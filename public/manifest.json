@@ -113,6 +113,66 @@
         },
         {
           "alias": [
+            "default/sounds/death.mp3",
+            "death.mp3"
+          ],
+          "src": [
+            "default/sounds/death.mp3"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/sounds/music.mp3",
+            "music.mp3"
+          ],
+          "src": [
+            "default/sounds/music.mp3"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/sounds/open_door.mp3",
+            "open_door.mp3"
+          ],
+          "src": [
+            "default/sounds/open_door.mp3"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/sounds/pickup_key.mp3",
+            "pickup_key.mp3"
+          ],
+          "src": [
+            "default/sounds/pickup_key.mp3"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
+            "default/sounds/pickup_torch.mp3",
+            "pickup_torch.mp3"
+          ],
+          "src": [
+            "default/sounds/pickup_torch.mp3"
+          ],
+          "data": {
+            "tags": {}
+          }
+        },
+        {
+          "alias": [
             "default/sprites/env",
             "env"
           ],
